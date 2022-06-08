@@ -1,9 +1,9 @@
 # Site Settings
 locale                   : "zh-CN"
-title                    : "WU Fan"
+title                    : "吴凡"
 title_separator          : "-"
-name                     : "WU Fan"
-description              : "WU Fan's website."
+name                     : "吴凡"
+description              : "吴凡的个人主页"
 url                      : "https://xkunwu.github.io/wufan/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "xkunwu/wufan"
@@ -86,7 +86,7 @@ analytics:
 
 # Site Author
 author:
-  name: "WU Fan"
+  name: "吴凡"
   avatar: "/assets/images/bio-photo.jpg"
   # bio: "I am an amazing person."
   # location: "Somewhere"
