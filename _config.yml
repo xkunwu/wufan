@@ -4,9 +4,9 @@ title                    : "WU Fan"
 title_separator          : "-"
 name                     : "WU Fan"
 description              : "WU Fan's website."
-url                      : "https://wufan.github.io"
+url                      : "https://xkunwu.github.io/wufan/"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "xkunwu/wufan.github.io"
+repository               : "xkunwu/wufan"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200

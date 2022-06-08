@@ -3,5 +3,7 @@ main:
     url: /
   - title: "教学"
     url: /teach/
+  - title: "法律事务"
+    url: /legal/
   - title: "关于"
     url: /about/

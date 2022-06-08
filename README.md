@@ -1,6 +1,6 @@
 # WU Fan's personal homepage
 
-> This is the code base of [WU Fan's personal homepage](https://wufan.github.io/).
+> This is the code base of [WU Fan's personal homepage](https://xkunwu.github.io/wufan/).
 
 ## Why use [GitHub Pages](https://pages.github.com/)?
 Markdown is much easier to write - people can concatenate on the content, rather than the messy format tags.
