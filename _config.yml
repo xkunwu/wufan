@@ -1,0 +1,286 @@
+# Site Settings
+locale                   : "en-US"
+title                    : "WU Xiaokun"
+title_separator          : "-"
+name                     : "WU Xiaokun"
+description              : "WU Xiaokun's website."
+url                      : "https://xkunwu.github.io"
+baseurl                  : # the subpath of your site, e.g. "/blog"
+repository               : "xkunwu/xkunwu.github.io"
+teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
+# breadcrumbs            : false # true, false (default)
+words_per_minute         : 200
+comments:
+  provider               : # false (default), "disqus", "discourse", "facebook", "google-plus", "staticman", "staticman_v2", "utterances", "custom"
+  disqus:
+    shortname            : # https://help.disqus.com/customer/portal/articles/466208-what-s-a-shortname-
+  discourse:
+    server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
+  facebook:
+    # https://developers.facebook.com/docs/plugins/comments
+    appid                :
+    num_posts            : # 5 (default)
+    colorscheme          : # "light" (default), "dark"
+  utterances:
+    theme                : # "github-light" (default), "github-dark"
+staticman:
+  allowedFields          : # ['name', 'email', 'url', 'message']
+  branch                 : # "master"
+  commitMessage          : # "New comment by {fields.name}"
+  filename               : # comment-{@timestamp}
+  format                 : # "yml"
+  moderation             : # true
+  path                   : # "/_data/comments/{options.slug}" (default)
+  requiredFields         : # ['name', 'email', 'message']
+  transforms:
+    email                : # "md5"
+  generatedFields:
+    date:
+      type               : # "date"
+      options:
+        format           : # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
+  endpoint               : # URL of your own deployment with trailing slash, will fallback to the public instance
+reCaptcha:
+  siteKey                :
+  secret                 :
+atom_feed:
+  path                   : # blank (default) uses feed.xml
+search                   : # true, false (default)
+search_full_content      : # true, false (default)
+search_provider          : # lunr (default), algolia, google
+algolia:
+  application_id         : # YOUR_APPLICATION_ID
+  index_name             : # YOUR_INDEX_NAME
+  search_only_api_key    : # YOUR_SEARCH_ONLY_API_KEY
+  powered_by             : # true (default), false
+google:
+  search_engine_id       : # YOUR_SEARCH_ENGINE_ID
+  instant_search         : # false (default), true
+# SEO Related
+google_site_verification :
+bing_site_verification   :
+yandex_site_verification :
+naver_site_verification  :
+
+# Social Sharing
+twitter:
+  username               :
+facebook:
+  username               :
+  app_id                 :
+  publisher              :
+og_image                 : # Open Graph/Twitter default site image
+# For specifying social profiles
+# - https://developers.google.com/structured-data/customize/social-profiles
+social:
+  type                   : # Person or Organization (defaults to Person)
+  name                   : # If the user or organization name differs from the site's name
+  links: # An array of links to social media profiles
+
+# Analytics
+analytics:
+  provider               : false # false (default), "google", "google-universal", "custom"
+  google:
+    tracking_id          :
+    anonymize_ip         : # true, false (default)
+
+# Site Author
+author:
+  name: "WU Xiaokun"
+  avatar: "/assets/images/bio-photo.jpg"
+  # bio: "I am an amazing person."
+  # location: "Somewhere"
+  email: xkun.wu (at) gmail
+  links:
+    # - label: "Email"
+    - label: "Email: xkun.wu (at) gmail"
+      icon: "fas fa-fw fa-envelope-square"
+      # url: "mailto:billyrick@rick.com"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/xkunwu"
+
+defaults:
+  # pages
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
+      sidebar:
+        nav: "main"
+  # posts
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: single
+      author_profile: true
+      read_time: false
+      comments: true
+      share: true
+      related: true
+  # research
+  - scope:
+      path: "research"
+      type: pages
+    values:
+      layout: projects
+      read_time: false
+      share: true
+      related: true
+  # projects
+  - scope:
+      path: "projects"
+      type: pages
+    values:
+      layout: projects
+      read_time: false
+      share: true
+      related: true
+  # notes
+  - scope:
+      path: "notes"
+      type: pages
+    values:
+      layout: archive
+      related: true
+      sidebar:
+        nav: "notes"
+  # about
+  - scope:
+      path: "pages/about"
+      type: pages
+    values:
+      sitemap: false
+      author_profile: false
+      read_time: false
+  # sitemap
+  - scope:
+      path: "pages/**/*.jpg"
+      path: "pages/**/*.png"
+      path: "pages/**/*.mp4"
+    values:
+      sitemap: false
+
+# Reading Files
+include:
+    - .htaccess
+    - _pages
+exclude:
+    - .asset-cache
+    - .bundle
+    - .jekyll-assets-cache
+    - .sass-cache
+    - assets/js/plugins
+    - assets/js/_main.js
+    - assets/js/vendor
+    - Gemfile
+    - Makefile
+    - /README.md
+    - notes/notes-cs/.git
+    - .tags
+    - .tags1
+keep_files:
+    - .git
+encoding: "utf-8"
+markdown_ext: "markdown,mkdown,mkdn,mkd,md"
+
+# Conversion
+markdown: kramdown
+highlighter: rouge
+lsi: false
+excerpt_separator: "\n\n"
+incremental: false
+
+# Markdown Processing
+kramdown:
+  input: GFM
+  hard_wrap: false
+  auto_ids: true
+  footnote_nr: 1
+  entity_output: as_char
+  toc_levels: 1..4
+  smart_quotes: lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+
+# Sass/SCSS
+sass:
+  # sass_dir: /_themes/minimal-mistakes/_sass
+  style: compressed # http://sass-lang.com/documentation/file.SASS_REFERENCE.html#output_style
+
+# # Outputting
+# permalink: /:categories/:title/
+# paginate: 5 # amount of posts to show
+# paginate_path: /page:num/
+# timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+
+# Plugins (previously gems:)
+plugins:
+    - jekyll-titles-from-headings
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
+    - jekyll-seo-tag
+    - jekyll-last-modified-at
+    # - jemoji
+
+# mimic GitHub Pages with --safe
+whitelist:
+    - jekyll-titles-from-headings
+    - jekyll-paginate
+    - jekyll-sitemap
+    - jekyll-gist
+    - jekyll-feed
+    - jekyll-include-cache
+    - jekyll-seo-tag
+    - jekyll-last-modified-at
+    # - jemoji
+
+# Archives
+#  Type
+#  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
+#  - Jekyll Archives plugin archive pages ~> type: jekyll-archives
+#  Path (examples)
+#  - Archive page should exist at path when using Liquid method or you can
+#    expect broken links (especially with breadcrumbs enabled)
+#  - <base_path>/tags/my-awesome-tag/index.html ~> path: /tags/
+#  - <base_path/categories/my-awesome-category/index.html ~> path: /categories/
+#  - <base_path/my-awesome-category/index.html ~> path: /
+category_archive:
+  type: liquid
+  path: /categories/
+tag_archive:
+  type: liquid
+  path: /tags/
+# https://github.com/jekyll/jekyll-archives
+# jekyll-archives:
+#   enabled:
+#     - categories
+#     - tags
+#   layouts:
+#     category: archive-taxonomy
+#     tag: archive-taxonomy
+#   permalinks:
+#     category: /categories/:name/
+#     tag: /tags/:name/
+
+
+# HTML Compression
+# - http://jch.penibelst.de/
+compress_html:
+  clippings: all
+  ignore:
+    envs: development
+
+titles_from_headings:
+    enabled:     true
+    strip_title: true
+    collections: true
+
+# theme: "minimal-mistakes-jekyll"
+remote_theme: "mmistakes/minimal-mistakes"
+minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
