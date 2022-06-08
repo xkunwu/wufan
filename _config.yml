@@ -1,12 +1,12 @@
 # Site Settings
-locale                   : "en-US"
-title                    : "WU Xiaokun"
+locale                   : "zh-CN"
+title                    : "WU Fan"
 title_separator          : "-"
-name                     : "WU Xiaokun"
-description              : "WU Xiaokun's website."
-url                      : "https://xkunwu.github.io"
+name                     : "WU Fan"
+description              : "WU Fan's website."
+url                      : "https://wufan.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : "xkunwu/xkunwu.github.io"
+repository               : "xkunwu/wufan.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 # breadcrumbs            : false # true, false (default)
 words_per_minute         : 200
@@ -86,19 +86,16 @@ analytics:
 
 # Site Author
 author:
-  name: "WU Xiaokun"
+  name: "WU Fan"
   avatar: "/assets/images/bio-photo.jpg"
   # bio: "I am an amazing person."
   # location: "Somewhere"
-  email: xkun.wu (at) gmail
+  email: 
   links:
     # - label: "Email"
-    - label: "Email: xkun.wu (at) gmail"
+    - label: "Email: "
       icon: "fas fa-fw fa-envelope-square"
       # url: "mailto:billyrick@rick.com"
-    - label: "GitHub"
-      icon: "fab fa-fw fa-github"
-      url: "https://github.com/xkunwu"
 
 defaults:
   # pages
@@ -121,33 +118,6 @@ defaults:
       comments: true
       share: true
       related: true
-  # research
-  - scope:
-      path: "research"
-      type: pages
-    values:
-      layout: projects
-      read_time: false
-      share: true
-      related: true
-  # projects
-  - scope:
-      path: "projects"
-      type: pages
-    values:
-      layout: projects
-      read_time: false
-      share: true
-      related: true
-  # notes
-  - scope:
-      path: "notes"
-      type: pages
-    values:
-      layout: archive
-      related: true
-      sidebar:
-        nav: "notes"
   # about
   - scope:
       path: "pages/about"
@@ -281,6 +251,6 @@ titles_from_headings:
     strip_title: true
     collections: true
 
-# theme: "minimal-mistakes-jekyll"
-remote_theme: "mmistakes/minimal-mistakes"
+theme: "minimal-mistakes-jekyll"
+# remote_theme: "mmistakes/minimal-mistakes"
 minimal_mistakes_skin    : "default" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
